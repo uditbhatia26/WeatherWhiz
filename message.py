@@ -10,7 +10,7 @@ class SendMessage:
 
     def rain_message(self):
         for i in range(len(keys.mobile_numbers)):
-            message = (f"*Good Morning JI*\n"
+            message = (f"*Good Morning *\n"
                        f"*It may rain today, Bring an Umbrella ☂️*\n\n"
                        f"Description: {self.weather.forecast_value}\n"
                        f"Temperature: {self.weather.temperature_value}°C\n"
@@ -22,7 +22,7 @@ class SendMessage:
 
     def sun_message(self):
         for i in range(len(keys.mobile_numbers)):
-            message = (f"*Good Morning JI*\n"
+            message = (f"*Good Morning *\n"
                        f"*It's less likely to rain today*\n\n"
                        f"Description: {self.weather.forecast_value}\n"
                        f"Temperature: {self.weather.temperature_value}°C\n"
