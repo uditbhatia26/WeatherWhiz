@@ -1,10 +1,13 @@
+Here's the updated README to reflect the use of the **OpenWeather API** instead of **BeautifulSoup**:
+
+
 # WhatsApp Weather Updates Bot 🌦️
 
-This project is a **WhatsApp bot** built using **Python** and **BeautifulSoup** to fetch daily weather updates from the **OpenWeather** website. The bot sends weather information to a list of WhatsApp contacts through the **UltraMsg API**, ensuring users are prepared for the day's weather before heading out.
+This project is a **WhatsApp bot** built using **Python** and the **OpenWeather API** to fetch daily weather updates. The bot sends weather information to a list of WhatsApp contacts through the **UltraMsg API**, ensuring users are prepared for the day's weather before heading out.
 
 ## Features
 
-- Scrapes weather data from the OpenWeather website.
+- Fetches weather data from the OpenWeather API.
 - Sends automated daily weather updates via WhatsApp using UltraMsg API.
 - Customizable to send messages to any number of contacts.
 - Easy to configure and run as a daily cron job.
@@ -12,7 +15,7 @@ This project is a **WhatsApp bot** built using **Python** and **BeautifulSoup** 
 ## Tech Stack
 
 - **Python**: Main programming language.
-- **BeautifulSoup**: For web scraping weather data from the OpenWeather website.
+- **OpenWeather API**: For retrieving weather data.
 - **UltraMsg API**: For sending WhatsApp messages.
 
 ## Installation
@@ -20,44 +23,32 @@ This project is a **WhatsApp bot** built using **Python** and **BeautifulSoup** 
 ### Prerequisites
 
 - **Python 3.x**: Make sure Python is installed. You can download it from [here](https://www.python.org/downloads/).
-- **BeautifulSoup**: Install using pip:
+- **OpenWeather API Key**: Sign up at [OpenWeather](https://openweathermap.org/api) and get your API key.
+- **UltraMsg Account**: Sign up at [UltraMsg](https://www.ultramsg.com/) and get your API credentials.
 
-  ```bash
-  pip install beautifulsoup4
+### Steps
 
-Here’s the corrected version with proper markdown formatting:
+1. Clone the repository:
 
-```markdown
-## Steps
+   ```bash
+   git clone https://github.com/uditbhatia26/weather-updates-whatsapp.git
+   cd weather-updates-whatsapp
+   ```
 
-### Clone the repository:
+2. Set up your environment variables or API credentials:
+   - Create a `.env` file or directly add your **OpenWeather API key**, **UltraMsg API key**, and **contact numbers** to the script.
 
-```bash
-git clone https://github.com/yourusername/weather-whatsapp-bot.git
-cd weather-whatsapp-bot
-```
+3. Configure the script to fetch weather data for your location.
 
-### Install required Python packages:
+4. Run the bot to send weather updates:
 
-```bash
-pip install -r requirements.txt
-```
-
-### Set up your environment variables or API credentials:
-
-- Create a `.env` file or directly add your **UltraMsg API key** and **contact numbers** to the script.
-
-### Configure the script to scrape weather data for your location.
-
-### Run the bot to send weather updates:
-
-```bash
-python weather_bot.py
-```
+   ```bash
+   python main.py
+   ```
 
 ## Usage
 
-1. The bot scrapes the weather data from the OpenWeather website using **BeautifulSoup**.
+1. The bot fetches the weather data from the **OpenWeather API**.
 2. Weather information is formatted and sent to the specified WhatsApp numbers using **UltraMsg API**.
 3. You can modify the timing of the weather update by scheduling the script with **cron jobs**.
 
@@ -77,11 +68,10 @@ Stay prepared before heading to college!
 
 ## Customization
 
-- You can modify the location for weather updates by changing the scraping logic in the script.
+- You can modify the location for weather updates by changing the **OpenWeather API** query.
 - Update the list of WhatsApp numbers in the script to add more recipients.
 
 ## Future Enhancements
 
 - Add multiple location support.
-- Integrate OpenWeather's API for more detailed weather forecasts.
 - Implement weather alerts for extreme conditions.
