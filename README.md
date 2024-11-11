@@ -1,4 +1,4 @@
-# WhatsApp Weather Updates Bot 🌦️
+! WeatherWhiz 🌦️
 
 This project is a **WhatsApp bot** built using **Python** and the **OpenWeather API** to fetch daily weather updates. The bot sends weather information to a list of WhatsApp contacts through the **UltraMsg API**, ensuring users are prepared for the day's weather before heading out.
 
