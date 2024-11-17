@@ -62,10 +62,6 @@ Humidity: 60%
 Wind Speed: 10 km/h 🌬️
 Stay prepared before heading to college!
 ```
-
-## Customization
-
-- You can modify the location for weather updates by changing the **OpenWeather API** query.
 - Update the list of WhatsApp numbers in the script to add more recipients.
 
 ## Future Enhancements
